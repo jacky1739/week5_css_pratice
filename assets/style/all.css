@@ -160,6 +160,8 @@ table {
         -ms-flex-align: center;
             align-items: center;
     color: black; }
+  .admin .page {
+    padding-top: 50px; }
 
 .page {
   margin: 64px 0 16px;
@@ -217,8 +219,16 @@ table {
   margin-top: 48px;
   border-collapse: collapse;
   border-spacing: 0; }
-  table tr {
-    padding: 20px 0 20px; }
+  table thead tr th {
+    width: 30%;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    font: normal normal bold 16px/24px Lato; }
+  table tbody td {
+    font: normal normal normal 16px/24px Lato;
+    padding: 20px 0 16px;
+    border-bottom: 1px solid #cdddcd; }
   table .id-style {
     font: normal normal bold 16px/24px Lato;
     width: 10%; }
