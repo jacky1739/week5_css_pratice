@@ -14,7 +14,9 @@
         align-items: center;
         color: black;
     }
-    
+    .page{
+        padding-top: 50px;
+    }
 }
 
 .page{
@@ -68,8 +70,23 @@ table {
     margin-top: 48px;
     border-collapse: collapse;
     border-spacing: 0;
-    tr{
-        padding: 20px 0 20px;
+    thead{
+        tr{
+            th {
+                width: 30%;
+                text-align: left;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #000;
+                font: normal normal bold 16px/24px Lato;
+            }
+        }
+    }
+    tbody {
+        td {
+            font: normal normal normal 16px/24px Lato;
+            padding: 20px 0 16px;
+            border-bottom: 1px solid #cdddcd;
+        }
     }
     .id-style{
         font: normal normal bold 16px/24px Lato;
