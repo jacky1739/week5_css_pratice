@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sideBar {
+  width: 20%;
+  text-align: center;
+  background-color: #EDF4EE;
+  min-height: 100vh;
+  position: relative;
+}
+
+.sideBar .logo {
+  width: 150px;
+  height: 40px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.sideBar .logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li::after {
+  content: "";
+  width: 0px;
+  height: 100%;
+  background-color: #2A8356;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menu li.active::after {
+  width: 4px;
+}
+
+.menu li.active a {
+  color: #2A8356;
+}
+
+.menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #121212;
+  font: normal normal bold 16px/24px Lato;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 16px 32px;
+  position: relative;
+}
+
+.menu li a:hover {
+  color: #2A8356;
+}
+
+.material-icons {
+  margin-right: 16px;
+}
+
+.avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  left: 32px;
+  bottom: 40px;
+}
+
+.avatar .pic {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.avatar .name {
+  color: #121212;
+  font: normal normal bold 16px/24px Lato;
+}
+
+.avatar .contact {
+  color: #0000009A;
+  font: normal normal normal 14px/24px Lato;
+}
+
+.admin {
+  width: 80%;
+  padding: 32px;
+}
+
+.admin .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.admin .header-title {
+  font: normal normal bold 24px/33px Lato;
+  margin-right: 46px;
+}
+
+.header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add {
+  color: #2A8356;
+}
+/*# sourceMappingURL=all.css.map */
