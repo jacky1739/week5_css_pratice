@@ -9,7 +9,7 @@ current: index
     <div class="header pt-3">
         <div class="d-flex">
             <label for="header-list" class="header-title">Admin</label>
-            <a href="#" class="new-admin d-flex">
+            <a href="#" class="new-admin d-flex"  data-target="#add-admin">
                 <span class="material-icons add">
                     add
                 </span>
@@ -54,14 +54,7 @@ current: index
                 <td>Emir Wicks</td>
                 <td>emir.wicks@mail.com</td>
                 <td>Yes</td>
-                    <a href="#" class="icon">
-                        <span class="material-icons emir-trigger">
-                            remove_red_eye
-                        </span>
-                        <span class="material-icons emir-edit">
-                            edit
-                        </span>
-                    </a>
+                    
             </tr>
             <tr>
                 <th scope="row">#2</th>
@@ -131,5 +124,25 @@ current: index
                 keyboard_arrow_right
             </a></li>
     </ul>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="add-admin" tabindex="-1" role="dialog" aria-labelledby="add-admin" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
+    </div>
 </div>

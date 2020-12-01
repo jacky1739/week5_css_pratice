@@ -16,34 +16,68 @@
     }
     .page{
         padding-top: 50px;
+        li{
+            a:hover{
+                text-decoration: none;
+                background-color: $color-secondary;
+            }
+        }
+    }
+    .header{
+        justify-content: space-between;
+    }
+    table {
+        width: 100%;
+        margin-top: 48px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        thead{
+            tr{
+                th {
+                    width: 30%;
+                    text-align: left;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #000;
+                    font: normal normal bold 16px/24px Lato;
+                }
+            }
+        }
+        tbody {
+            td {
+                font: normal normal normal 16px/24px Lato;
+                padding: 20px 0 16px;
+                border-bottom: 1px solid #cdddcd;
+            }
+        }
+        .id-style{
+            font: normal normal bold 16px/24px Lato;
+            width: 10%;
+        }
+    }
+    .page{
+        margin: 64px 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+            a {
+                width: 32px;
+                height: 32px;
+                display: block;
+                text-align: center;
+                line-height: 32px;
+                border: 1px solid #2a8356;
+                margin: 0 0 -1px -1px;
+                color: #121212;
+            }
+            .material-icons {
+                color: #2a8356;
+            }
+        }
     }
 }
 
-.page{
-    margin: 64px 0 16px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    li {
-        a {
-            width: 32px;
-            height: 32px;
-            display: block;
-            text-align: center;
-            line-height: 32px;
-            border: 1px solid #2a8356;
-            margin: 0 0 -1px -1px;
-            color: #121212;
-        }
-        .material-icons {
-            color: #2a8356;
-        }
-    }
-}
 
-.header{
-    justify-content: space-between;
-}
 .new-admin{
     display: flex;
     justify-content: center;
@@ -55,41 +89,10 @@
     }
     .add-admin{
         font: normal normal bold 16px/24px Lato;
+        color: black;
     }
 }
 .new-admin:hover{
     text-decoration: none;
 }
 
-.add-admin{
-    color: black;
-}
-
-table {
-    width: 100%;
-    margin-top: 48px;
-    border-collapse: collapse;
-    border-spacing: 0;
-    thead{
-        tr{
-            th {
-                width: 30%;
-                text-align: left;
-                padding-bottom: 5px;
-                border-bottom: 1px solid #000;
-                font: normal normal bold 16px/24px Lato;
-            }
-        }
-    }
-    tbody {
-        td {
-            font: normal normal normal 16px/24px Lato;
-            padding: 20px 0 16px;
-            border-bottom: 1px solid #cdddcd;
-        }
-    }
-    .id-style{
-        font: normal normal bold 16px/24px Lato;
-        width: 10%;
-    }
-}
